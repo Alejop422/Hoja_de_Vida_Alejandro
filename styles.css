@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* Estilos Generales*/
+    body{
+        font-family: 'Poppins', sans-serif; /* Fuente */
+        line-height: 1.6; /* Espacio Lineas */
+        background-color: #F5F5F5;/*Color del fondo*/
+        color: black;/*Color de la pagina*/
+        margin: 0 ;
+        padding: 30px 50px;
+    }
+
+
+    .container{
+        width: 80%; /*Ancho del contenedor*/
+        max-width: 800px;
+        margin: 20px auto;/*Margen superior e inferior*/
+        background: whitesmoke; /* Fondo Blanco para el contenedor*/
+        padding: 20px; /* Separa el contenido del borde del contenedor*/
+        box-shadow: 0 0 10px rgba(0, 0, 0, 1); /*Sombra alrededor del contenedor*/
+        text-align: center;
+    }
+
+    /* Encabezados */
+    header{
+        text-align: center; /*Centrado del texto*/
+        margin-bottom: 25px;
+    }
+
+    .profile-pic{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #5B3A8E;
+        box-shadow: 0 8px 20px #5c3a8e;
+    }
+
+    h1{
+        color: #5B3A8E;
+        margin: 10px 0;
+        font-weight: 700;
+        
+    }
+
+    h2{
+        color: #5B3A8E;
+        font-size:  1.3em ;
+        font-weight: 600;
+    }
+
+    .section{
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+        border-bottom: 1px dashed darkgray;
+        margin-left: 20px;
+        margin-right: 20px;
+
+    }
+
+    .skills{
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .skills li{
+        background: #5B3A8E;
+        color: beige;
+        padding:8px 18px;
+        border-radius:30px;
+        
+
+    }
+
+    .print-button-container{
+        text-align:  center;
+        margin: 15px 0;
+
+    }
+
+    .print-button{
+        background-color: #5B3A8E;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+
+    }
+
+    .print-button:hover{
+        background-color: #7348B3;
+    }
+@media print {
+    .print-button-container{
+        display: none
+    }
+    
+}
+
